@@ -1,6 +1,6 @@
 # 🌐 Munashe Mudabura – Portfolio Website
 
-![Portfolio Preview](./screenshots/home.png)
+![Portfolio Preview](./public/screenshots/portfolio.png)
 
 This is my personal **portfolio website** built with **React (via Vite)** and **Tailwind CSS**, showcasing my projects, skills, and experience.  
 It features **light/dark mode support**, smooth animations, and a modern responsive design.
@@ -36,19 +36,19 @@ It features **light/dark mode support**, smooth animations, and a modern respons
 
 ### 🏠 Hero Section
 
-![Hero](./screenshots/hero.png)
+![Hero](./public/screenshots/portfolio.png)
 
 ### 💼 Projects Section
 
-![Projects](./screenshots/projects.png)
+![Projects](./public/screenshots/projects.png)
 
 ### 🛠️ Skills Section
 
-![Skills](./screenshots/skills.png)
+![Skills](./public/screenshots/skills.png)
 
 ### 📞 Contact Section
 
-![Contact](./screenshots/contact.png)
+![Contact](./public/screenshots/contact.png)
 
 ---
 
