@@ -1,14 +1,15 @@
 import { ArrowDown } from "lucide-react";
+import profileImg from "/Munashe Mudabura.png"; // <- place your image in /public or /src/assets
 
 export const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative flex flex-col items-center justify-center min-h-screen text-center px-4"
+      className="relative flex items-center justify-center min-h-screen px-4"
     >
-      {/* Content */}
-      <div className="container max-w-4xl mx-auto text-center z-10">
-        <div className="space-y-6">
+      <div className="container mx-auto grid md:grid-cols-2 items-center gap-8">
+        {/* Left side - Text */}
+        <div className="space-y-6 relative z-10 text-left">
           <h1 className="text-4xl md:text-6xl">
             <span className="text-4xl sm:text-5xl font-bold text-glow text-foreground opacity-0 animate-fade-in-delay-1">
               Hi, I'm{" "}
@@ -21,7 +22,7 @@ export const HeroSection = () => {
               </span>
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto opacity-0 animate-fade-in-delay-4">
+          <p className="text-lg md:text-xl text-foreground/80 max-w-xl opacity-0 animate-fade-in-delay-4">
             I'm a passionate developer specializing in creating beautiful and
             functional web applications.
           </p>
@@ -30,6 +31,22 @@ export const HeroSection = () => {
             <a href="#projects" className="cosmic-button">
               View My Work
             </a>
+          </div>
+        </div>
+
+        {/* Right side - Image */}
+        <div className="relative">
+          <img
+            src={profileImg}
+            alt="Munashe Mudabura"
+            className="w-80 md:w-[400px] rounded-full mx-auto opacity-0 animate-fade-in-delay-3"
+          />
+
+          {/* Optional overlay for text overlap effect */}
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <h1 className="text-6xl md:text-7xl font-bold text-primary opacity-10">
+              Developer
+            </h1>
           </div>
         </div>
       </div>
