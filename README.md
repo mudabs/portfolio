@@ -7,6 +7,8 @@ It features **light/dark mode support**, smooth animations, and a modern respons
 
 🔗 **Live Demo**: [munashemudabura.com](http://munashemudabura.com)
 
+- [Watch Demo](./public/screenshots/demo.mp4)
+
 ---
 
 ## ✨ Features
