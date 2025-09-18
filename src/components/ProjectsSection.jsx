@@ -27,8 +27,8 @@ const projects = [
       "A modern and responsive personal portfolio built using React and Tailwind CSS to showcase my skills, projects, and contact information.",
     image: "/projects/portfolio.png",
     tags: ["React", "TailwindCSS"],
-    demoUrl: "https://munashemudabura.com",
-    githubUrl: "https://github.com/mudabs/portfolio",
+    demoUrl: "http://munashemudabura.com/",
+    githubUrl: "https://github.com/mudabs/portfolio/",
   },
 ];
 
