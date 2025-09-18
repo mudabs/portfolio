@@ -22,13 +22,13 @@ const projects = [
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Personal Portfolio",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "A modern and responsive personal portfolio built using React and Tailwind CSS to showcase my skills, projects, and contact information.",
+    image: "/projects/portfolio.png",
+    tags: ["React", "TailwindCSS"],
+    demoUrl: "https://munashemudabura.com",
+    githubUrl: "https://github.com/mudabs/portfolio",
   },
 ];
 
@@ -47,9 +47,9 @@ export const ProjectsSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, key) => (
+          {projects.map((project) => (
             <div
-              key={key}
+              key={project.id}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
               <div className="h-48 overflow-hidden">
