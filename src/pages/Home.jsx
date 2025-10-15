@@ -3,6 +3,7 @@ import { StarBackground } from "../components/StarBackground";
 import { Navbar } from "../components/Navbar";
 import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
+import { CertsSection } from "../components/CertsSection";
 import { SkillsSection } from "../components/SkillsSection";
 import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContatcSection";
@@ -24,6 +25,7 @@ export const Home = () => {
       <main className="relative z-10">
         <HeroSection />
         <AboutSection />
+        <CertsSection />
         <SkillsSection />
         <ProjectsSection />
         <ContactSection />

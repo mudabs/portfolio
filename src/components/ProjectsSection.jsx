@@ -12,13 +12,19 @@ const projects = [
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Scribe Inventory Management",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+      "Interactive inventory management system with real-time tracking and analytics.",
+    image: "/projects/scribe.jpg",
+    tags: [
+      "ASP.NET Core MVC 9",
+      "Razor",
+      "jQuery",
+      "Entity Framework Core",
+      "SQL Server",
+    ],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/mudabs/Scribe",
   },
   {
     id: 3,
