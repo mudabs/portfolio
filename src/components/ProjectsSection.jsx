@@ -3,12 +3,13 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "Realtime Chat App",
+    description:
+      "A TypeScript-based real-time chat application built with React, Supabase, and Tailwind CSS. Supports authentication, one-on-one messaging, and live updates via Supabase Realtime. Deployed on a personal VPS (AlmaLinux) and uses web sockets.",
+    image: "/projects/realtimechatapp.png",
+    tags: ["React", "TypeScript", "Supabase", "TailwindCSS", "VPS Deployment"],
+    demoUrl: "https://realtimechat.munashemudabura.com/",
+    githubUrl: "https://github.com/mudabs/realtime-chat-app",
   },
   {
     id: 2,
@@ -32,7 +33,7 @@ const projects = [
     description:
       "A modern and responsive personal portfolio built using React and Tailwind CSS to showcase my skills, projects, and contact information.",
     image: "/projects/portfolio.png",
-    tags: ["React", "TailwindCSS"],
+    tags: ["React", "JavaScript", "TailwindCSS"],
     demoUrl: "http://munashemudabura.com/",
     githubUrl: "https://github.com/mudabs/portfolio/",
   },

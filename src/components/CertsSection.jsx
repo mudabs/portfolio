@@ -4,11 +4,36 @@ import { useState } from "react";
 // --- 1. Define Certifications Data ---
 const certifications = [
   {
-    name: "Oracle Cloud Infrastructure Foundations Associate",
+    name: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
     category: "cloud",
     badgePath: "/badges/OCI25FNDCFA.jpeg",
-    link: "https://example.com/verify-oci-cert", // Use the actual verification link if available
-    badgeLink: "/badges/OCI25FNDCFA.jpeg", // Link directly to the badge image for opening in a new tab
+    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=10E8F6FADEF7F0FB32FEAC20A6DD991F78B59F08E5E09367A8FD60B418AB65E1",
+    badgeLink:
+      "https://catalog-education.oracle.com/pls/certview/sharebadge?id=10E8F6FADEF7F0FB32FEAC20A6DD991F78B59F08E5E09367A8FD60B418AB65E1",
+  },
+  {
+    name: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+    category: "ai",
+    badgePath: "/badges/OCI25AICFA.jpeg",
+    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=A71B5168D9ADBAAE992939570D21BA2F5F10597261598C0AF59A1694843FF9D5",
+    badgeLink:
+      "https://catalog-education.oracle.com/pls/certview/sharebadge?id=A71B5168D9ADBAAE992939570D21BA2F5F10597261598C0AF59A1694843FF9D5",
+  },
+  {
+    name: "Oracle Data Platform 2025 Certified Foundations Associate",
+    category: "data",
+    badgePath: "/badges/OCI25DCFAV2.jpg",
+    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=019746FB6AC8560C019C9F5E87AA0BE7A21BF31F65D7EDF806A50E1B093E22DD",
+    badgeLink:
+      "https://catalog-education.oracle.com/pls/certview/sharebadge?id=019746FB6AC8560C019C9F5E87AA0BE7A21BF31F65D7EDF806A50E1B093E22DD",
+  },
+  {
+    name: "MySQL HeatWave Implementation Certified Associate Rel 1",
+    category: "data",
+    badgePath: "/badges/MYSQLHWIMPOCA.jpg",
+    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=C1399DDADA28ABCBBA4D0F72E69D058545FEB747EF3A2A430451B2CCEF81B2C0",
+    badgeLink:
+      "https://catalog-education.oracle.com/pls/certview/sharebadge?id=C1399DDADA28ABCBBA4D0F72E69D058545FEB747EF3A2A430451B2CCEF81B2C0",
   },
   // Add more certifications here as you get them:
   // {
