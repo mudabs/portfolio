@@ -37,6 +37,16 @@ const projects = [
     demoUrl: "http://munashemudabura.com/",
     githubUrl: "https://github.com/mudabs/portfolio/",
   },
+  {
+    id: 4,
+    title: "Smartcart",
+    description:
+      "A full-stack e-commerce system with a React storefront, Spring Boot API, role-based admin and seller dashboards, Stripe-powered checkout, Dockerized deployment, and a LangChain4j-powered shopping assistant for product discovery and support.",
+    image: "/projects/smartcart.png",
+    tags: ["React 19", "Spring Boot", "PostgreSQL", "Stripe", "Docker", "LangChain4j"],
+    demoUrl: "https://smartcart.munashemudabura.com/",
+    githubUrl: "https://github.com/mudabs/Ecommerce-Frontend.git",
+  },
 ];
 
 export const ProjectsSection = () => {
