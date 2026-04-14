@@ -29,16 +29,6 @@ const projects = [
   },
   {
     id: 3,
-    title: "Personal Portfolio",
-    description:
-      "A modern and responsive personal portfolio built using React and Tailwind CSS to showcase my skills, projects, and contact information.",
-    image: "/projects/portfolio.png",
-    tags: ["React", "JavaScript", "TailwindCSS"],
-    demoUrl: "http://munashemudabura.com/",
-    githubUrl: "https://github.com/mudabs/portfolio/",
-  },
-  {
-    id: 4,
     title: "Smartcart",
     description:
       "A full-stack e-commerce system with a React storefront, Spring Boot API, role-based admin and seller dashboards, Stripe-powered checkout, Dockerized deployment, and a LangChain4j-powered shopping assistant for product discovery and support.",
@@ -46,6 +36,16 @@ const projects = [
     tags: ["React 19", "Spring Boot", "PostgreSQL", "Stripe", "Docker", "LangChain4j"],
     demoUrl: "https://smartcart.munashemudabura.com/",
     githubUrl: "https://github.com/mudabs/Ecommerce-Frontend.git",
+  },
+  {
+    id: 4,
+    title: "Personal Portfolio",
+    description:
+      "A modern and responsive personal portfolio built using React and Tailwind CSS to showcase my skills, projects, and contact information.",
+    image: "/projects/portfolio.png",
+    tags: ["React", "JavaScript", "TailwindCSS"],
+    demoUrl: "http://munashemudabura.com/",
+    githubUrl: "https://github.com/mudabs/portfolio/",
   },
 ];
 
