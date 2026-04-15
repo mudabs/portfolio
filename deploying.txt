@@ -2,7 +2,7 @@ Steps to fix(Alma Linux)
 
 SSH into your VPS:
 
-ssh root@74.208.155.239
+ssh she@66.179.81.222
 dd6WYp6y
 
 Create the folder structure:

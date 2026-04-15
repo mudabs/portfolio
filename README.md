@@ -91,9 +91,9 @@ What it does:
 
 - Installs dependencies with `npm ci`
 - Builds the Vite app
-- Builds a Docker image for the site
-- Copies the image archive to your VPS over SSH
-- Loads the image on the VPS and restarts the running container
+- Archives the generated `dist/` folder
+- Copies the archive to your VPS over SSH
+- Replaces the contents of `/var/www/portfolio` with the latest static build
 
 ### Required GitHub Secrets
 
@@ -103,31 +103,29 @@ Add these repository secrets before enabling the workflow:
 - `VPS_USER`: SSH user on the VPS
 - `VPS_SSH_KEY`: private SSH key used by GitHub Actions
 
-Optional secrets:
-
-- `VPS_SSH_PORT`: SSH port, defaults to `22`
-- `VPS_DEPLOY_PATH`: remote folder for image uploads, defaults to `/opt/portfolio`
-- `VPS_CONTAINER_NAME`: Docker container name, defaults to `portfolio-site`
-- `VPS_HOST_PORT`: host port mapped to container port `80`, defaults to `8080`
-
 ### VPS Prerequisites
 
 Your VPS needs:
 
-- Docker installed and running
-- The SSH user allowed to run Docker commands
-- Nginx or another reverse proxy pointing your domain to the selected host port if you are not publishing directly on port `80`
+- Nginx configured to serve files from `/var/www/portfolio`
+- The SSH user allowed to write into `/var/www/portfolio`
 
-Example Nginx upstream if the container is bound to port `8080`:
+Example Nginx server block:
 
 ```nginx
-location / {
-	proxy_pass http://127.0.0.1:8080;
-	proxy_set_header Host $host;
-	proxy_set_header X-Real-IP $remote_addr;
-	proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-	proxy_set_header X-Forwarded-Proto $scheme;
+server {
+	listen 80;
+	server_name munashemudabura.com www.munashemudabura.com;
+
+	root /var/www/portfolio;
+	index index.html;
+
+	location / {
+		try_files $uri $uri/ /index.html;
+	}
 }
 ```
 
-Once the secrets are set, every push to `main` will build and deploy the updated container automatically.
+If `munashe` does not own `/var/www/portfolio`, update permissions first so the workflow can publish files there.
+
+Once the secrets are set, every push to `main` will build and deploy the updated static files automatically.
