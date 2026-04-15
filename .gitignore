@@ -18,6 +18,7 @@ out/
 
 # Env files
 .env
+.env.*
 .env.local
 .env.*.local
 
