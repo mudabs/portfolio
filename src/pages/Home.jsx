@@ -24,10 +24,10 @@ export const Home = () => {
       {/* Main Content */}
       <main className="relative z-10">
         <HeroSection />
-        <AboutSection />
-        <CertsSection />
-        <SkillsSection />
         <ProjectsSection />
+        <SkillsSection />
+        <CertsSection />
+        <AboutSection />
         <ContactSection />
       </main>
 

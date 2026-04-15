@@ -1,80 +1,78 @@
-# 🌐 Munashe Mudabura – Portfolio Website
+# Munashe Mudabura Portfolio Website
 
 ![Portfolio Preview](./public/screenshots/portfolio.png)
 
-This is my personal **portfolio website** built with **React (via Vite)** and **Tailwind CSS**, showcasing my projects, skills, and experience.  
-It features **light/dark mode support**, smooth animations, and a modern responsive design.
+This repository contains my personal portfolio website, built with React through Vite and styled with Tailwind CSS. It presents my projects, technical skills, certifications, and professional background in a responsive single-page application.
 
-🔗 **Live Demo**: [munashemudabura.com](http://munashemudabura.com)
+Live Demo: [munashemudabura.com](http://munashemudabura.com)
 
 - [Watch Demo](./public/screenshots/demo.mp4)
 
 ---
 
-## ✨ Features
+## Features
 
-- 🎨 **Modern UI/UX** with Tailwind CSS and custom animations
-- 🌓 **Light & Dark mode** toggle
-- 📂 **Projects section** with GitHub + demo links
-- 🛠️ **Skills section** with progress indicators and category filters
-- 📞 **Contact form** with email + social links (LinkedIn, Instagram, WhatsApp)
-- 🖼️ **Hero section with profile image and intro**
-- 📄 **Download CV option**
-- 📱 **Fully responsive** across devices
-
----
-
-## 🚀 Technologies Used
-
-- **[React](https://react.dev/)** (bootstrapped with [Vite](https://vitejs.dev/))
-- **[Tailwind CSS](https://tailwindcss.com/)** for styling
-- **[Lucide Icons](https://lucide.dev/)** for icons
-- **Framer Motion / CSS Animations** for transitions and effects
-- **Shadcn/UI components** for polished UI elements
+- Responsive layout designed for desktop and mobile devices
+- Theme toggle with light and dark presentation modes
+- Project showcase with links to live demos and source repositories
+- Skills section with categorized capabilities and progress indicators
+- Certifications section highlighting relevant credentials
+- Contact section with direct communication and social links
+- Hero section with introductory profile content and resume access
 
 ---
 
-## 📸 Screenshots
+## Technologies Used
 
-### 🏠 Hero Section
+- [React](https://react.dev/) with [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Lucide Icons](https://lucide.dev/)
+- CSS animations and transition effects
+- Shadcn UI components
+
+---
+
+## Screenshots
+
+### Hero Section
 
 ![Hero](./public/screenshots/portfolio.png)
 
-### 💼 Projects Section
+### Projects Section
 
 ![Projects](./public/screenshots/projects.png)
 
-### 🛠️ Skills Section
+### Skills Section
 
 ![Skills](./public/screenshots/skills.png)
 
-### 📞 Contact Section
+### Contact Section
 
 ![Contact](./public/screenshots/contact.png)
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation and Setup
 
-Follow these steps to run the portfolio locally:
+To run the project locally:
 
 ```bash
-# 1️⃣ Clone the repository
+# 1. Clone the repository
 git clone https://github.com/mudabs/portfolio.git
 
-# 2️⃣ Navigate into the project folder
+# 2. Navigate to the project directory
 cd portfolio
 
-# 3️⃣ Install dependencies
+# 3. Install dependencies
 npm install
 
-# 4️⃣ Run the development server
+# 4. Start the development server
 npm run dev
 ```
 
-## 🐳 Docker
+## Docker
 
-Build and run the portfolio locally in a container:
+To build and run the portfolio in a container:
 
 ```bash
 docker build -t portfolio-site .
@@ -83,7 +81,7 @@ docker run --rm -p 8080:80 portfolio-site
 
 Then open `http://localhost:8080`.
 
-## 🚢 GitHub Actions VPS Deployment
+## GitHub Actions VPS Deployment
 
 This repository includes a workflow at `.github/workflows/deploy.yml` that runs on every push to `main`.
 
@@ -97,7 +95,7 @@ What it does:
 
 ### Required GitHub Secrets
 
-Add these repository secrets before enabling the workflow:
+Add the following repository secrets before enabling the workflow:
 
 - `VPS_HOST`: VPS hostname or IP address
 - `VPS_USER`: SSH user on the VPS
@@ -126,6 +124,6 @@ server {
 }
 ```
 
-If `munashe` does not own `/var/www/portfolio`, update permissions first so the workflow can publish files there.
+If `munashe` does not own `/var/www/portfolio`, update the directory permissions before using the workflow.
 
 Once the secrets are set, every push to `main` will build and deploy the updated static files automatically.
