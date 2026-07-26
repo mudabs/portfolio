@@ -23,9 +23,15 @@ export const HeroSection = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 max-w-xl opacity-0 animate-fade-in-delay-4">
-            I'm a passionate developer specializing in creating beautiful and
-            functional web applications.
+            Software engineer building scalable backend systems and full-stack
+            products, with a growing focus on AI and machine learning.
           </p>
+
+          <div className="opacity-0 animate-fade-in-delay-4">
+            <span className="inline-block rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary">
+              M.S. Computer Science · 4.0 GPA · Saint Louis University
+            </span>
+          </div>
 
           <div className="mt-6 opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-button">

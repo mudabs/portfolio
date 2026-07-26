@@ -16,20 +16,23 @@ export const AboutSection = () => {
 
               <p className="text-muted-foreground/80">
                 I'm Munashe Mudabura, a Master's student in Computer Science at
-                Saint Louis University with a strong background in Software
-                Engineering. I enjoy solving complex problems and building
-                scalable solutions that make a real impact.
+                Saint Louis University (4.0 GPA) with a strong background in
+                software engineering. I enjoy solving complex problems and
+                building scalable, production-grade systems that make a real
+                impact.
               </p>
               <p className="text-muted-foreground/80">
-                My expertise spans modern web technologies like React, .NET
-                MAUI, and Blazor. I’m passionate about creating user-friendly
-                applications that combine performance, functionality, and great
-                design.
+                My core stack spans Java and Spring Boot on the backend, React
+                and Next.js on the frontend, tied together with PostgreSQL,
+                Docker, and cloud deployment. I care about clean architecture,
+                solid REST API design, and shipping features that hold up in
+                production.
               </p>
               <p className="text-muted-foreground/80">
-                Beyond coding, I am continuously exploring AI and emerging
-                technologies to expand my skill set and contribute to innovative
-                projects in software development and enterprise systems.
+                Beyond web systems, I'm actively growing in AI and machine
+                learning, from LLM integration to computer vision, and enjoy
+                taking projects all the way from prototype to deployed,
+                real-world software.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -55,11 +58,11 @@ export const AboutSection = () => {
                   </div>
                   <div className="text-left">
                     <h4 className="text-lg font-semibold">
-                      Frontend Development
+                      Backend Engineering
                     </h4>
                     <p className="text-muted-foreground/80">
-                      Building responsive, dynamic, and visually appealing web
-                      applications using React and modern JavaScript frameworks.
+                      Designing and building REST APIs and scalable services with
+                      Java, Spring Boot, and PostgreSQL, deployed with Docker.
                     </p>
                   </div>
                 </div>
@@ -70,10 +73,10 @@ export const AboutSection = () => {
                     <User className="h-6 w-6 text-primary" />
                   </div>
                   <div className="text-left">
-                    <h4 className="text-lg font-semibold">Full-Stack Skills</h4>
+                    <h4 className="text-lg font-semibold">Full-Stack Development</h4>
                     <p className="text-muted-foreground/80">
-                      Experience with .NET MAUI, Blazor, and backend systems to
-                      deliver complete end-to-end software solutions.
+                      Building responsive React and Next.js frontends backed by
+                      robust services to deliver complete, end-to-end products.
                     </p>
                   </div>
                 </div>
@@ -84,13 +87,10 @@ export const AboutSection = () => {
                     <Briefcase className="h-6 w-6 text-primary" />
                   </div>
                   <div className="text-left">
-                    <h4 className="text-lg font-semibold">
-                      Professional Growth
-                    </h4>
+                    <h4 className="text-lg font-semibold">AI &amp; Cloud</h4>
                     <p className="text-muted-foreground/80">
-                      Focused on mastering new technologies, collaborating on
-                      real-world projects, and building a career as a versatile
-                      software developer.
+                      Integrating LLMs and exploring computer vision, with CI/CD
+                      and cloud/VPS deployment for production-grade delivery.
                     </p>
                   </div>
                 </div>
