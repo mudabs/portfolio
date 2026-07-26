@@ -11,11 +11,11 @@ const education = [
       "Focus on software engineering, AI/ML, computer vision, and parallel & GPU computing.",
   },
   {
-    degree: "Bachelor of Technology (Hons), Information Technology",
+    degree: "B.Tech (Hons), Software Engineering",
     school: "Harare Institute of Technology",
     location: "Harare, Zimbabwe",
     period: "2020 – 2024",
-    honor: "First Class Honours",
+    honor: "First Class Honours (~3.8/4.0)",
     detail:
       "Foundation in software engineering, data structures, databases, and systems design.",
   },
