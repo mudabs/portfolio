@@ -1,0 +1,47 @@
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="EventShare">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFBF8"/>
+      <stop offset="1" stop-color="#FDF2F8"/>
+    </linearGradient>
+    <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F472B6"/>
+      <stop offset="1" stop-color="#DB2777"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="360" fill="url(#bg)"/>
+
+  <!-- gallery motif, right side -->
+  <g transform="translate(360 60) rotate(-4)">
+    <rect x="0" y="0" width="210" height="185" rx="16" fill="#FFFFFF" stroke="#FBCFE8" stroke-width="2"/>
+    <rect x="16" y="16" width="54" height="54" rx="7" fill="#FDE7F1"/>
+    <circle cx="43" cy="43" r="12" fill="#C99A3B"/>
+    <rect x="78" y="16" width="54" height="54" rx="7" fill="#FCE9DB"/>
+    <circle cx="105" cy="43" r="15" fill="url(#rose)"/>
+    <rect x="140" y="16" width="54" height="54" rx="7" fill="#F3E8F6"/>
+    <path d="M140 60l14-14 12 10 10-12 18 20v4a2 2 0 0 1-2 2h-50a2 2 0 0 1-2-2z" fill="#831843" opacity="0.7"/>
+    <rect x="16" y="78" width="54" height="54" rx="7" fill="#FCE9DB"/>
+    <path d="M43 90l7 12H36z" fill="#C99A3B"/>
+    <rect x="78" y="78" width="54" height="54" rx="7" fill="#FDE7F1"/>
+    <circle cx="105" cy="105" r="14" fill="#F472B6"/>
+    <rect x="140" y="78" width="54" height="54" rx="7" fill="#F3E8F6"/>
+    <path d="M168 92c5-8 18-3 0 11-18-14-5-19 0-11z" fill="#DB2777"/>
+    <rect x="55" y="148" width="100" height="20" rx="10" fill="#FDF2F8"/>
+    <rect x="66" y="156" width="52" height="5" rx="2.5" fill="#DB2777" opacity="0.5"/>
+    <circle cx="140" cy="158" r="6" fill="#DB2777"/>
+  </g>
+
+  <!-- floating hearts -->
+  <path d="M330 70c7-11 24-5 0 14-24-19-7-25 0-14z" fill="#DB2777"/>
+  <path d="M300 250c5-8 17-3 0 10-17-13-5-18 0-10z" fill="#F472B6"/>
+
+  <!-- wordmark + tagline, left -->
+  <text x="52" y="150" font-family="'Brush Script MT','Segoe Script',cursive" font-size="70" fill="#DB2777">Event</text>
+  <text x="250" y="150" font-family="Georgia,'Times New Roman',serif" font-size="46" font-weight="600" fill="#831843">Share</text>
+  <text x="55" y="196" font-family="Georgia,serif" font-size="24" fill="#4A3540">Every moment, together.</text>
+  <text x="55" y="228" font-family="Inter,Arial,sans-serif" font-size="15" fill="#4A3540" opacity="0.7">Shared photo &amp; video galleries for weddings and events.</text>
+
+  <!-- gold divider -->
+  <rect x="55" y="250" width="120" height="2" rx="1" fill="#C99A3B" opacity="0.7"/>
+</svg>

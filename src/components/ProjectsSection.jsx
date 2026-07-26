@@ -2,6 +2,16 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    id: 5,
+    title: "EventShare",
+    description:
+      "A production-grade SaaS for collaborative event media. Hosts create an event room; guests join by QR or link (no app, no account) and upload photos and videos to one shared gallery. Next.js frontend, Spring Boot API with in-process media processing (thumbnails and video posters), direct-to-R2 presigned uploads, Clerk auth, Stripe billing, host moderation, and a single-VPS Docker deployment.",
+    image: "/projects/eventshare.svg",
+    tags: ["Next.js", "Spring Boot", "PostgreSQL", "Cloudflare R2", "Clerk", "Docker"],
+    demoUrl: "https://eventshare.munashemudabura.com/",
+    githubUrl: "https://github.com/mudabs/EventShare",
+  },
+  {
     id: 1,
     title: "Realtime Chat App",
     description:
