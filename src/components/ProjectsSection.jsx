@@ -5,9 +5,9 @@ const projects = [
     id: 6,
     title: "Proctor",
     description:
-      "An AI-powered online exam proctoring system that monitors candidates via webcam in real time. Detects faces, head direction, multiple people in frame, and foreign objects using computer vision, logging violations to a live session timeline for invigilators.",
+      "A Dockerized Flask and Gunicorn online proctoring platform that analyzes browser webcam frames server-side with YOLOv8, a custom liveness model, MediaPipe Face Mesh, OpenCV head-pose estimation, dlib landmarks, and face-recognition embeddings. Detects face presence, multiple people, cellphones, head direction, liveness, mouth movement, and optional student identity.",
     image: "/projects/proctor.png",
-    tags: ["React", "Computer Vision", "AI/ML", "Real-time Detection", "WebRTC"],
+    tags: ["Flask", "YOLOv8", "OpenCV", "MediaPipe", "Docker"],
     demoUrl: "https://proctor.munashemudabura.com",
     githubUrl: "https://github.com/mudabs/Proctor",
   },
