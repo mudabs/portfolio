@@ -2,6 +2,16 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    id: 6,
+    title: "Proctor",
+    description:
+      "An AI-powered online exam proctoring system that monitors candidates via webcam in real time. Detects faces, head direction, multiple people in frame, and foreign objects using computer vision, logging violations to a live session timeline for invigilators.",
+    image: "/projects/proctor.png",
+    tags: ["React", "Computer Vision", "AI/ML", "Real-time Detection", "WebRTC"],
+    demoUrl: "https://proctor.munashemudabura.com",
+    githubUrl: "https://github.com/mudabs/Proctor",
+  },
+  {
     id: 5,
     title: "EventShare",
     description:

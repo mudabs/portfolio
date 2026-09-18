@@ -93,13 +93,22 @@ What it does:
 - Copies the archive to your VPS over SSH
 - Replaces the contents of `/var/www/portfolio` with the latest static build
 
-### Required GitHub Secrets
+### GitHub Actions configuration
 
-Add the following repository secrets before enabling the workflow:
+The workflow deploys on every push to `main` and can be run manually from the
+Actions tab. It targets the production VPS `munashe@66.179.81.222` by default.
+Add this required repository secret before enabling the workflow:
 
-- `VPS_HOST`: VPS hostname or IP address
-- `VPS_USER`: SSH user on the VPS
 - `VPS_SSH_KEY`: private SSH key used by GitHub Actions
+
+Optional repository secrets can override the defaults:
+
+- `VPS_HOST` (default: `66.179.81.222`)
+- `VPS_USER` (default: `munashe`)
+
+To create the required secret, copy the contents of the private deploy key into
+GitHub: **Settings → Secrets and variables → Actions → New repository secret**.
+Never commit the private key to this repository.
 
 ### VPS Prerequisites
 

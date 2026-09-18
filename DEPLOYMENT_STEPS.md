@@ -38,8 +38,8 @@ git push origin main
 
 What the pipeline does (`.github/workflows/deploy.yml`):
 1. Builds the site (`npm ci` + `npm run build` → `dist/`).
-2. Archives `dist/` and copies it to the VPS over SSH (using the `VPS_HOST`,
-   `VPS_USER`, `VPS_SSH_KEY` repo secrets).
+2. Archives `dist/` and copies it to `munashe@66.179.81.222` over SSH (using the
+   `VPS_SSH_KEY` repo secret; `VPS_HOST` and `VPS_USER` may override the defaults).
 3. Replaces the contents of `/var/www/portfolio` with the new build.
 
 Watch it run: GitHub repo → **Actions** tab → the latest "Build And Deploy Static
@@ -88,8 +88,9 @@ git push origin main            # pipeline redeploys the reverted build
 
 ## Notes
 
-- Secrets (VPS host, user, SSH key) live in **GitHub repo Settings → Secrets and
-  variables → Actions** — never in the repo.
+- The SSH private key lives in **GitHub repo Settings → Secrets and variables →
+  Actions** as `VPS_SSH_KEY` — never in the repo. `VPS_HOST` and `VPS_USER` are
+  optional overrides; the defaults are `66.179.81.222` and `munashe`.
 - Do not commit passwords, IPs, or keys to this repo (it is public). Prefer SSH-key
   auth and keep the private key only in the GitHub Actions secret.
 - The GitHub Pages `npm run deploy` script (gh-pages) is an alternate publish target;
